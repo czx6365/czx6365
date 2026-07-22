@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/profile.png" width="150" alt="Chen Zixi profile photo" />
+  <img src="assets/profile.jpg" width="150" alt="Chen Zixi profile photo" />
   <h1>陈子熹 | Chen Zixi</h1>
   <p><strong>AI Agent Engineering | RAG Applications | Forward Deployed Engineer</strong></p>
   <p>
