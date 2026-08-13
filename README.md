@@ -13,56 +13,60 @@
 
 ## About Me
 
-I am an undergraduate student in Information and Computing Science at Xi'an Jiaotong-Liverpool University. My work sits at the intersection of **LLM agents, software engineering, retrieval and verification, biomedical sequence modeling, and applied machine learning**.
+I am an undergraduate student in **Information and Computing Science** at **Xi'an Jiaotong-Liverpool University (XJTLU)**. My work focuses on building AI systems that remain useful when the real environment is messy: incomplete context, noisy retrieval, changing software versions, uncertain labels, and limited supervision.
 
-I am particularly interested in research questions where model capability alone is not enough: systems must also handle incomplete context, noisy evidence, changing environments, reproducible evaluation, and reliable decision making.
-
-My current focus is on building **evidence-aware and testable AI systems** with retrieval, tool use, verification, self-correction, structured memory, and reproducible experiments.
+My current interests sit at the intersection of **LLM agents for software engineering, reliable retrieval and verification, biomedical sequence modeling, and applied machine learning**. I care about not only model capability, but also **evidence construction, execution feedback, uncertainty, reproducibility, and evaluation**.
 
 ## Selected Research & Engineering
 
-| Project | Research / Engineering Focus | Keywords |
+| Project | Focus | Evidence |
 | --- | --- | --- |
-| [**ECHO-Repro**](https://github.com/czx6365/ECHO-Repro) | Environment-aware LLM agent for synthesizing executable bug reproduction harnesses and validating them with Fail-to-Pass criteria | LLM Agent, SWE-bench, CI, Bug Reproduction |
-| [**SelfCorrect Agent**](https://github.com/czx6365/agent_selfcorrect) | Studies when LLM self-correction helps or hurts using calculator-gated refinement, reflection memory, retrieval, and unit-test feedback | Self-Correction, Reflection, Tool Feedback, Evaluation |
-| [**ECG Research**](https://github.com/czx6365/ECG) | 12-lead ECG representation learning with heartbeat-level tokenization, masked pretraining, and downstream risk prediction | ECG, Representation Learning, PyTorch |
-| [**HeritageHub**](https://github.com/czx6365/CPT202_GroupProject) | Full-stack platform with JWT authentication, RBAC, review workflow, auditability, and lifecycle management | Spring Boot, React, MySQL, Software Engineering |
-| [**Controllable Multi-Interest Recommendation**](https://github.com/czx6365/Controllable-Multi-Interest-Framework-for-Recommendation) | Sequential recommendation and multi-interest user representation learning | Recommendation, Multi-Interest Learning, TensorFlow |
+| [**ECHO-Repro**](https://github.com/czx6365/ECHO-Repro) | Environment-aware LLM agent for synthesizing executable bug-reproduction harnesses from Issue / Log / Trace / Code context, with execution feedback and Fail-to-Pass validation | LLM Agent · SWE-bench · CI · Bug Reproduction |
+| [**ECG Research**](https://github.com/czx6365/ECG) | HeartLang-style heartbeat tokenization, quality-aware adaptive masking, and selective MLM for ECG-only coronary stenosis prediction | Best reported ROC-AUC **0.7681** · [result artifact](https://github.com/czx6365/ECG/blob/main/results/ECG_DSA/best_reported_result.json) |
+| [**SelfCorrect Agent**](https://github.com/czx6365/agent_selfcorrect) | Controlled study of LLM self-correction using calculator-gated critique, reflection memory, unit-test feedback, and verified-example retrieval | GSM8K · HumanEval · Self-Correction Evaluation |
+| [**MCM 2026 Problem C**](https://github.com/czx6365/MCM2026C) | Bayesian inverse inference of hidden fan votes, ABC, Monte Carlo counterfactual replay, robust regression, and elimination-mechanism design | **2026 MCM Meritorious Winner** |
+| [**HeritageHub**](https://github.com/czx6365/CPT202_GroupProject) | Full-stack cultural-heritage platform with Spring Boot, React, MySQL, JWT authentication, RBAC, review workflow, and security hardening | Software Engineering · Backend · Security |
+| [**Facial Attribute Recognition**](https://github.com/czx6365/face-recognition) | CelebA 40-attribute multi-label facial analysis with CNN / ResNet50 transfer learning and reproducible train-val-test evaluation | **Third Prize, XJTLU Facial Recognition Contest** |
+
+### Additional Projects
+
+- [**LogKG / LogInsight Baselines**](https://github.com/czx6365/logkg) — reproduction and adaptation workspace for log-based failure diagnosis baselines.
+- [**Controllable Multi-Interest Recommendation**](https://github.com/czx6365/Controllable-Multi-Interest-Framework-for-Recommendation) — multi-interest sequential recommendation reproduction and experimentation.
+- [**CLIP-MNIST Transfer Learning**](https://github.com/czx6365/-clip-mnist) — compact study comparing CLIP zero-shot classification with a frozen-image-encoder linear probe on MNIST.
 
 ## Research Interests
 
-- **LLM agents for software engineering:** bug reproduction, CI validation, tool use, execution feedback, and automated debugging.
-- **Reliable agent workflows:** retrieval, verification, confidence-guided routing, structured SOPs, memory, and self-correction.
+- **LLM agents for software engineering:** bug reproduction, CI validation, tool use, execution-grounded feedback, and automated debugging.
+- **Reliable agent workflows:** retrieval, structured evidence, verification, confidence-guided routing, memory, SOPs, and self-correction.
 - **Retrieval-augmented systems:** BM25, dense retrieval, hybrid search, evidence construction, and grounded generation.
-- **Biomedical sequence modeling:** ECG tokenization, adaptive masking, representation learning, and clinically meaningful downstream prediction.
-- **Recommendation systems:** controllable generation, multi-interest modeling, and user behavior representation.
-
-## Current Research Highlights
-
-### ECHO-Repro
-
-Research prototype for turning issue / log / trace / repository context into a **minimal executable reproduction harness**. The system explicitly separates source, test, and environment evidence, executes the generated harness, classifies failure modes, repairs recoverable errors, and uses **Fail-to-Pass validation** as the final success criterion.
-
-### SelfCorrect Agent
-
-Experimental study of LLM self-correction on **GSM8K** and **HumanEval**. The repository compares Direct, CoT, Self-Refine, Reflection, CRITIC, unit-test repair, and verified-example retrieval under fixed evaluation settings, with an emphasis on when correction introduces regressions instead of improvements.
-
-### ECG Language Modeling
-
-Research on 12-lead ECG representation learning using heartbeat-level tokenization and masked pretraining, with downstream experiments for coronary stenosis risk prediction. Current work investigates adaptive masking, selective masked-token learning, and evidence-aware fine-tuning.
+- **Biomedical sequence modeling:** ECG tokenization, masked pretraining, quality-aware learning, and clinically meaningful downstream prediction.
+- **Applied ML systems:** controlled experimentation, reproducibility, and translating research prototypes into robust software.
 
 ## Selected Experience
 
-- **Chinese University of Hong Kong (Shenzhen) — Research Assistant:** contributed to industrial CI failure diagnosis research, including topology-aware evidence construction, case memory, investigation paths, baseline reproduction, and evaluation.
-- **Huawei × CUHK-Shenzhen Collaboration — AI Engineering Project Member:** worked on RTOS / MindSpore intelligent fault diagnosis with data governance, retrieval, LLM-based verification, confidence routing, and SOP-based diagnostic workflows.
-- **Guangdong Telecom Planning & Designing Institute — AI Large Model Engineering Intern:** implemented enterprise RAG workflows with LangChain-Chatchat, FastAPI, Streamlit, BM25 + FAISS hybrid retrieval, and self-correction.
-- **iFLYTEK Healthcare Technology — Big Data Development Intern:** worked on layered healthcare data warehousing, SQL / ETL pipelines, data-quality validation, and production migration checks.
+- **Chinese University of Hong Kong (Shenzhen) — Research Assistant**  
+  Worked on industrial CI failure diagnosis, including topology-aware evidence construction, case memory, investigation paths, baseline reproduction, and evaluation.
 
-## Tech Stack
+- **Huawei × CUHK-Shenzhen — AI Engineering Collaboration**  
+  Adapted an RTOS / MindSpore fault-diagnosis research workflow to industrial data with label checking, Error Log / Pattern extraction, RAG restructuring, LLM verification, confidence routing, and SOP-based diagnosis.
+
+- **iFLYTEK Healthcare Technology — Big Data Development Intern**  
+  Built and validated SQL / ETL workflows for layered healthcare data warehousing, including data cleaning, field mapping, cross-table joins, consistency checks, and migration validation.
+
+- **Guangdong Telecom Planning & Designing Institute — AI Large Model Engineering Intern**  
+  Built an enterprise RAG pipeline with LangChain-Chatchat, FastAPI, Streamlit, BM25 + FAISS hybrid retrieval, OpenAI-compatible model services, and answer tracing.
+
+## Awards
+
+- **2026 Mathematical Contest in Modeling (MCM) — Meritorious Winner**
+- **Third Prize — XJTLU Facial Recognition Contest**
+
+## Technical Stack
 
 <p>
   <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
   <img alt="Java" src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white" />
+  <img alt="SQL" src="https://img.shields.io/badge/SQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
   <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
   <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
   <img alt="Spring Boot" src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" />
@@ -71,16 +75,10 @@ Research on 12-lead ECG representation learning using heartbeat-level tokenizati
   <img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" />
 </p>
 
-**LLM / Agent:** RAG, Tool Calling, Agent Workflow, LangChain, LangGraph, Prompt Engineering, Self-Correction, LLM Evaluation  
+**LLM / Agent:** RAG, Tool Calling, LangChain, LangGraph, Agent Workflow, Self-Correction, LLM Evaluation  
 **Retrieval / Modeling:** BM25, FAISS, Embedding Retrieval, Hybrid Search, LoRA / SFT, vLLM, PyTorch  
 **Backend / Data:** FastAPI, Spring Boot, REST APIs, MySQL, JPA, SQL, ETL Validation  
 **Engineering:** Linux, Git, Docker, CI/CD, LaTeX
-
-## Awards & Additional Information
-
-- 2026 Mathematical Contest in Modeling (MCM) — **Meritorious Winner**.
-- IELTS Overall Band **7.0**.
-- Interested in graduate study and research opportunities in **LLM agents, reliable AI, software engineering for AI, and biomedical machine learning**.
 
 ---
 
