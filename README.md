@@ -1,7 +1,8 @@
 <div align="center">
-  <img src="assets/profile.jpg" width="150" alt="Chen Zixi profile photo" />
-  <h1>陈子熹 | Zixi Chen</h1>
-  <p><strong>AI Agent Engineering | RAG Applications | Forward Deployed Engineer</strong></p>
+  <img src="assets/profile.jpg" width="150" alt="Zixi Chen profile photo" />
+  <h1>Zixi Chen | 陈子熹</h1>
+  <p><strong>Undergraduate Researcher @ Xi'an Jiaotong-Liverpool University</strong></p>
+  <p><strong>LLM Agents · Reliable AI Systems · Biomedical Machine Learning</strong></p>
   <p>
     <a href="mailto:1697362254@qq.com">Email</a> ·
     <a href="https://github.com/czx6365">GitHub</a>
@@ -12,33 +13,55 @@
 
 ## About Me
 
-I am an undergraduate student in Information and Computing Science at Xi'an Jiaotong-Liverpool University, focusing on AI agents, retrieval-augmented generation, and applied machine learning systems.
+I am an undergraduate student in **Information and Computing Science** at **Xi'an Jiaotong-Liverpool University (XJTLU)**. My work focuses on building AI systems that remain useful when the real environment is messy: incomplete context, noisy retrieval, changing software versions, uncertain labels, and limited supervision.
 
-I like building systems that connect research ideas with real engineering constraints: messy logs, noisy retrieval, imperfect data, reproducible experiments, and user-facing workflows.
+My current interests sit at the intersection of **LLM agents for software engineering, reliable retrieval and verification, biomedical sequence modeling, and applied machine learning**. I care about not only model capability, but also **evidence construction, execution feedback, uncertainty, reproducibility, and evaluation**.
 
-- Research and engineering focus: LLM agents, RAG, CI failure diagnosis, ECG representation learning, recommender systems.
-- Current direction: reliable agent workflows with retrieval, verification, self-correction, and evaluation loops.
-- Working style: fast prototyping, experiment-driven iteration, and careful validation before shipping.
+## Selected Research & Engineering
 
-## What I Am Building
-
-| Project | What it explores | Keywords |
+| Project | Focus | Evidence |
 | --- | --- | --- |
-| [agent_selfcorrect](https://github.com/czx6365/agent_selfcorrect) | LLM agent workflow for bug reproduction, CI validation, and repair-oriented feedback loops | LLM Agent, CI, Self-Correction |
-| [ECG](https://github.com/czx6365/ECG) | 12-lead ECG modeling with heartbeat-level tokens and rhythm-level representations | ECG, Masked Pretraining, PyTorch |
-| [Controllable-Multi-Interest-Framework-for-Recommendation](https://github.com/czx6365/Controllable-Multi-Interest-Framework-for-Recommendation) | Controllable generative recommendation with discrete diffusion and constrained decoding | Recommendation, Diffusion, Guidance |
-| [logkg](https://github.com/czx6365/logkg) | Log-related knowledge modeling for failure diagnosis and reasoning | Logs, Knowledge Graph, Diagnosis |
-| [CPT202_GroupProject](https://github.com/czx6365/CPT202_GroupProject) | Full-stack application work with backend, frontend, and database integration | Spring Boot, MySQL, Web App |
+| [**ECHO-Repro**](https://github.com/czx6365/ECHO-Repro) | Environment-aware LLM agent for synthesizing executable bug-reproduction harnesses from Issue / Log / Trace / Code context, with execution feedback and Fail-to-Pass validation | LLM Agent · SWE-bench · CI · Bug Reproduction |
+| [**ECG Research**](https://github.com/czx6365/ECG) | HeartLang-style heartbeat tokenization, quality-aware adaptive masking, and selective MLM for ECG-only coronary stenosis prediction | Best reported ROC-AUC **0.7681** · [result artifact](https://github.com/czx6365/ECG/blob/main/results/ECG_DSA/best_reported_result.json) |
+| [**SelfCorrect Agent**](https://github.com/czx6365/agent_selfcorrect) | Controlled study of LLM self-correction using calculator-gated critique, reflection memory, unit-test feedback, and verified-example retrieval | GSM8K · HumanEval · Self-Correction Evaluation |
+| [**MCM 2026 Problem C**](https://github.com/czx6365/MCM2026C) | Bayesian inverse inference of hidden fan votes, ABC, Monte Carlo counterfactual replay, robust regression, and elimination-mechanism design | **2026 MCM Meritorious Winner** |
+| [**HeritageHub**](https://github.com/czx6365/CPT202_GroupProject) | Full-stack cultural-heritage platform with Spring Boot, React, MySQL, JWT authentication, RBAC, review workflow, and security hardening | Software Engineering · Backend · Security |
+| [**Facial Attribute Recognition**](https://github.com/czx6365/face-recognition) | CelebA 40-attribute multi-label facial analysis with CNN / ResNet50 transfer learning and reproducible train-val-test evaluation | **Third Prize, XJTLU Facial Recognition Contest** |
+
+### Additional Projects
+
+- [**LogKG / LogInsight Baselines**](https://github.com/czx6365/logkg) — reproduction and adaptation workspace for log-based failure diagnosis baselines.
+- [**Controllable Multi-Interest Recommendation**](https://github.com/czx6365/Controllable-Multi-Interest-Framework-for-Recommendation) — multi-interest sequential recommendation reproduction and experimentation.
+- [**CLIP-MNIST Transfer Learning**](https://github.com/czx6365/-clip-mnist) — compact study comparing CLIP zero-shot classification with a frozen-image-encoder linear probe on MNIST.
 
 ## Research Interests
 
-- LLM agent debugging: from Issue, CI Log, Trace, and repository context to executable reproduction scripts and validation.
-- Confidence-guided routing: combining Case Memory with structured SOP paths for more reliable investigation.
-- Retrieval systems: BM25, FAISS, embedding retrieval, hybrid search, and evidence-aware generation.
-- Biomedical sequence modeling: ECG tokenization, adaptive masking, selective MLM loss, and clinically meaningful fine-tuning.
-- Recommender systems: controllable generation, logit-space guidance, and topology-constrained decoding.
+- **LLM agents for software engineering:** bug reproduction, CI validation, tool use, execution-grounded feedback, and automated debugging.
+- **Reliable agent workflows:** retrieval, structured evidence, verification, confidence-guided routing, memory, SOPs, and self-correction.
+- **Retrieval-augmented systems:** BM25, dense retrieval, hybrid search, evidence construction, and grounded generation.
+- **Biomedical sequence modeling:** ECG tokenization, masked pretraining, quality-aware learning, and clinically meaningful downstream prediction.
+- **Applied ML systems:** controlled experimentation, reproducibility, and translating research prototypes into robust software.
 
-## Tech Stack
+## Selected Experience
+
+- **Chinese University of Hong Kong (Shenzhen) — Research Assistant**  
+  Worked on industrial CI failure diagnosis, including topology-aware evidence construction, case memory, investigation paths, baseline reproduction, and evaluation.
+
+- **Huawei × CUHK-Shenzhen — AI Engineering Collaboration**  
+  Adapted an RTOS / MindSpore fault-diagnosis research workflow to industrial data with label checking, Error Log / Pattern extraction, RAG restructuring, LLM verification, confidence routing, and SOP-based diagnosis.
+
+- **iFLYTEK Healthcare Technology — Big Data Development Intern**  
+  Built and validated SQL / ETL workflows for layered healthcare data warehousing, including data cleaning, field mapping, cross-table joins, consistency checks, and migration validation.
+
+- **Guangdong Telecom Planning & Designing Institute — AI Large Model Engineering Intern**  
+  Built an enterprise RAG pipeline with LangChain-Chatchat, FastAPI, Streamlit, BM25 + FAISS hybrid retrieval, OpenAI-compatible model services, and answer tracing.
+
+## Awards
+
+- **2026 Mathematical Contest in Modeling (MCM) — Meritorious Winner**
+- **Third Prize — XJTLU Facial Recognition Contest**
+
+## Technical Stack
 
 <p>
   <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
@@ -49,37 +72,16 @@ I like building systems that connect research ideas with real engineering constr
   <img alt="Spring Boot" src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" />
   <img alt="MySQL" src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
   <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
-  <img alt="Git" src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
   <img alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" />
 </p>
 
-**AI / LLM:** RAG, LLM Agent, Tool Calling, Agent Workflow, LangChain, LangGraph, Prompt Engineering, Self-Correction, LLM Evaluation  
-**Retrieval / Modeling:** BM25, FAISS, Embedding Retrieval, Hybrid Search, LoRA/SFT, vLLM, PyTorch  
-**Backend / Data:** FastAPI, Spring Boot, RESTful API, MySQL, JPA, SQL, ETL validation  
-**Tools:** Linux, Git, Docker, CI/CD, LaTeX, Codex, Claude Code, Cursor
-
-## GitHub Stats
-
-<p align="center">
-  <img height="165" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=czx6365&show_icons=true&hide_border=true&theme=transparent" />
-  <img height="165" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=czx6365&layout=compact&hide_border=true&theme=transparent" />
-</p>
-
-## Selected Experience
-
-- AI Engineering Project Member, Huawei - Chinese University of Hong Kong (Shenzhen) collaboration project: worked on RTOS/MindSpore intelligent fault diagnosis with SFT, RAG retrieval, LLM-based verification, and SOP skill generation.
-- Research Assistant, Chinese University of Hong Kong (Shenzhen): contributed to LogRover-style CI failure diagnosis, case memory, investigation paths, and evaluation over precision, recall, F1, and latency.
-- AI Large Model Engineering Intern, Guangdong Telecom Planning & Designing Institute: built enterprise knowledge-base QA with LangChain-Chatchat, DeepSeek LLM and embedding services, FastAPI, Streamlit, BM25 + FAISS hybrid search, and self-correction evaluation.
-- Big Data Development Intern, Kexun Medical Technology: participated in ODS-PDM-DWD-DWS-EHRB layered data modeling and SQL-based ETL validation.
-
-## Beyond Code
-
-- 2026 MCM Meritorious Winner.
-- IELTS 7.0.
-- Interested in turning research prototypes into reliable, testable, and useful AI systems.
+**LLM / Agent:** RAG, Tool Calling, LangChain, LangGraph, Agent Workflow, Self-Correction, LLM Evaluation  
+**Retrieval / Modeling:** BM25, FAISS, Embedding Retrieval, Hybrid Search, LoRA / SFT, vLLM, PyTorch  
+**Backend / Data:** FastAPI, Spring Boot, REST APIs, MySQL, JPA, SQL, ETL Validation  
+**Engineering:** Linux, Git, Docker, CI/CD, LaTeX
 
 ---
 
 <div align="center">
-  <strong>Open to AI Agent, RAG, applied ML, and FDE-style engineering opportunities.</strong>
+  <strong>Research-oriented portfolio: methods, experiments, reproducibility, and engineering evidence.</strong>
 </div>
