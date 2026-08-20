@@ -25,14 +25,19 @@ My current interests sit at the intersection of **LLM agents for software engine
 | [**ECG Research**](https://github.com/czx6365/ECG) | HeartLang-style heartbeat tokenization, quality-aware adaptive masking, and selective MLM for ECG-only coronary stenosis prediction | Best reported ROC-AUC **0.7681** · [result artifact](https://github.com/czx6365/ECG/blob/main/results/ECG_DSA/best_reported_result.json) |
 | [**SelfCorrect Agent**](https://github.com/czx6365/agent_selfcorrect) | Controlled study of LLM self-correction using calculator-gated critique, reflection memory, unit-test feedback, and verified-example retrieval | GSM8K · HumanEval · Self-Correction Evaluation |
 | [**MCM 2026 Problem C**](https://github.com/czx6365/MCM2026C) | Bayesian inverse inference of hidden fan votes, ABC, Monte Carlo counterfactual replay, robust regression, and elimination-mechanism design | **2026 MCM Meritorious Winner** |
-| [**HeritageHub**](https://github.com/czx6365/CPT202_GroupProject) | Full-stack cultural-heritage platform with Spring Boot, React, MySQL, JWT authentication, RBAC, review workflow, and security hardening | Software Engineering · Backend · Security |
+| [**HeritageHub**](https://github.com/czx6365/HeritageHub) | Full-stack cultural-heritage platform with Spring Boot, React, MySQL, JWT authentication, RBAC, review workflow, and security hardening | Software Engineering · Backend · Security |
 | [**Facial Attribute Recognition**](https://github.com/czx6365/face-recognition) | CelebA 40-attribute multi-label facial analysis with CNN / ResNet50 transfer learning and reproducible train-val-test evaluation | **Third Prize, XJTLU Facial Recognition Contest** |
 
 ### Additional Projects
 
-- [**LogKG / LogInsight Baselines**](https://github.com/czx6365/logkg) — reproduction and adaptation workspace for log-based failure diagnosis baselines.
+- [**Reliable Customer-Service Agent**](https://github.com/czx6365/customer_service_agent) — FAQ-first and retrieval-grounded customer-service workflow with confidence checks, citation validation, clarification, and refusal routing.
+- [**LogKG / LogInsight Baselines**](https://github.com/czx6365/logkg-loginsight) — reproduction and adaptation workspace for log-based failure-diagnosis baselines.
 - [**Controllable Multi-Interest Recommendation**](https://github.com/czx6365/Controllable-Multi-Interest-Framework-for-Recommendation) — multi-interest sequential recommendation reproduction and experimentation.
-- [**CLIP-MNIST Transfer Learning**](https://github.com/czx6365/-clip-mnist) — compact study comparing CLIP zero-shot classification with a frozen-image-encoder linear probe on MNIST.
+- [**CLIP-MNIST Transfer Learning**](https://github.com/czx6365/clip-mnist) — compact study comparing CLIP zero-shot classification with a frozen-image-encoder linear probe on MNIST.
+
+## Publications
+
+- **Controllable Generative Recommendation via Guided Token Refinement** — **IEEE ICDM 2026 Research Track, Accepted**. Co-author.
 
 ## Research Interests
 
